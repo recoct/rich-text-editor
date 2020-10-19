@@ -1,6 +1,6 @@
-import { dryrun } from './utils.js'
-import { isFormatNode, isNonEmptyText, nodeLength, isSimliarNode } from './DOMUtil.js'
-import { nodeExclusiveIteratorWithin, nodeIteratorWithin } from './TreeWalkerUtil.js'
+import { dryrun } from '../utils/CollectionUtil.js'
+import { isFormatNode, isNonEmptyText, nodeLength, isSimliarNode } from '../utils/DOMUtil.js'
+import { nodeExclusiveIteratorWithin, nodeIteratorWithin } from '../utils/TreeWalkerUtil.js'
 
 export default
 class InlineCleanupEffect {

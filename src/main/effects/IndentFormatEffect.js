@@ -1,5 +1,5 @@
-import BlockStyleEffect from './BlockStyleEffect.js'
-import { AdditiveValuedMapFormatStrategy } from './MapLikeFormatStrategy.js'
+import BlockStyleEffect from './basics/BlockStyleEffect.js'
+import { AdditiveValuedMapFormatStrategy } from './strategies/MapLikeFormatStrategy.js'
 
 export default
 class IndentFormatEffect extends BlockStyleEffect {

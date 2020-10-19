@@ -1,9 +1,9 @@
-import { isLinebreak, isBlockElement, isContent, nodeLength, closest } from './DOMUtil.js'
-import { endOfRange, extendEnd, alignTo } from './RangeFactory.js'
-import { nodeBefore } from './TreeWalkerUtil.js'
+import { isLinebreak, isBlockElement, isContent, nodeLength, closest } from '../utils/DOMUtil.js'
+import { endOfRange, extendEnd, alignTo } from '../utils/RangeUtil.js'
+import { nodeBefore } from '../utils/TreeWalkerUtil.js'
+import CaretWalker from '../helpers/CaretWalker.js'
+import RangeRegulator from '../helpers/RangeRegulator.js'
 import Delegate from './Delegate.js'
-import CaretWalker from './CaretWalker.js'
-import RangeRegulator from './RangeRegulator.js'
 
 export default
 class RichTextEditorInsertionDelegate extends Delegate {
@@ -190,8 +190,7 @@ class RichTextEditorInsertionDelegate extends Delegate {
     const { contentWalker } = this._coordinator
 
     const end = endOfRange(range)
-    const { endContainer, endOffset } = end
-    // console.log(endContainer, endContainer.length, endOffset)
+    const { endContainer } = end
     console.assert(!isContent(endContainer))
 
     const node = nodeBefore(contentWalker, end)

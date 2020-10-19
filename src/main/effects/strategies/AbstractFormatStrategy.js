@@ -1,4 +1,4 @@
-import { map, getBounds } from './utils.js'
+import { map, getBounds } from '../../utils/CollectionUtil.js'
 
 export default
 class AbstractFormatStrategy {

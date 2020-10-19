@@ -1,5 +1,5 @@
-import InlineStyleEffect from './InlineStyleEffect.js'
-import { AdditiveValuedMapFormatStrategy } from './MapLikeFormatStrategy.js'
+import InlineStyleEffect from './basics/InlineStyleEffect.js'
+import { AdditiveValuedMapFormatStrategy } from './strategies/MapLikeFormatStrategy.js'
 
 export default
 class FontSizeFormatEffect extends InlineStyleEffect {

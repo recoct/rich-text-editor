@@ -2,28 +2,28 @@ import {
   ToggleBoldFormatEffect,
   ToggleItalicFormatEffect,
   ToggleUnderlineFormatEffect
-} from './ToggleEmphasizeTextFormatEffect.js'
+} from '../effects/ToggleEmphasizeTextFormatEffect.js'
 import {
   IncreaseFontSizeFormatEffect,
   DecreaseFontSizeFormatEffect
-} from './FontSizeFormatEffect.js'
-import FontColorFormatEffect from './FontColorFormatEffect.js'
+} from '../effects/FontSizeFormatEffect.js'
+import FontColorFormatEffect from '../effects/FontColorFormatEffect.js'
 import {
   IncreaseIndentFormatEffect,
   DecreaseIndentFormatEffect
-} from './IndentFormatEffect.js'
-import InlineCleanupEffect from './InlineCleanupEffect.js'
+} from '../effects/IndentFormatEffect.js'
+import InlineCleanupEffect from '../effects/InlineCleanupEffect.js'
 
-import InlineStyleEffect from './InlineStyleEffect.js'
-import InlineSemanticsEffect from './InlineSemanticsEffect.js'
+import InlineStyleEffect from '../effects/basics/InlineStyleEffect.js'
+import InlineSemanticsEffect from '../effects/basics/InlineSemanticsEffect.js'
 // import BlockStyleEffect from './BlockStyleEffect.js'
-import { EnumerativeKeyedSetFormatStrategy } from './SetLikeFormatStrategy.js'
-import { EnumerativeValuedMapFormatStrategy } from './MapLikeFormatStrategy.js'
+import { EnumerativeKeyedSetFormatStrategy } from '../effects/strategies/SetLikeFormatStrategy.js'
+import { EnumerativeValuedMapFormatStrategy } from '../effects/strategies/MapLikeFormatStrategy.js'
+
+import RangeRegulator from '../helpers/RangeRegulator.js'
 
 import Delegate from './Delegate.js'
 import CompositeDelegate from './CompositeDelegate.js'
-
-import RangeRegulator from './RangeRegulator.js'
 
 export default
 class RichTextEditorFormattingDelegate extends CompositeDelegate {

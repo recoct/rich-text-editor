@@ -1,15 +1,16 @@
-import { isBlockElement, isLinebreak, isNonEmptyText, isInlineEmbeded, isFormatNode } from './DOMUtil.js'
-import { createTreeWalker, composeTreeWalkersUnion } from './TreeWalkerUtil.js'
-import CompositeDelegate from './CompositeDelegate.js'
+import { isBlockElement, isLinebreak, isNonEmptyText, isInlineEmbeded, isFormatNode } from '../utils/DOMUtil.js'
+import { createTreeWalker, composeTreeWalkersUnion } from '../utils/TreeWalkerUtil.js'
 
-import RichTextEditorModeDelegate from './RichTextEditorModeDelegate.js'
-import RichTextEditorSelectionDelegate from './RichTextEditorSelectionDelegate.js'
-import RichTextEditorInsertionDelegate from './RichTextEditorInsertionDelegate.js'
-import RichTextEditorFormattingDelegate from './RichTextEditorFormattingDelegate.js'
+import CompositeDelegate from '../delegates/CompositeDelegate.js'
 
-import AddressPrompt from './AddressPrompt.js'
-import ColorPrompt from './ColorPrompt.js'
-import HeadingPrompt from './HeadingPrompt.js'
+import RichTextEditorModeDelegate from '../delegates/RichTextEditorModeDelegate.js'
+import RichTextEditorSelectionDelegate from '../delegates/RichTextEditorSelectionDelegate.js'
+import RichTextEditorInsertionDelegate from '../delegates/RichTextEditorInsertionDelegate.js'
+import RichTextEditorFormattingDelegate from '../delegates/RichTextEditorFormattingDelegate.js'
+
+import AddressPrompt from '../prompts/AddressPrompt.js'
+import ColorPrompt from '../prompts/ColorPrompt.js'
+import HeadingPrompt from '../prompts/HeadingPrompt.js'
 
 export default
 class RichTextEditorCoordinator extends CompositeDelegate {

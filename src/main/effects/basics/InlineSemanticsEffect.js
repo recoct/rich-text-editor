@@ -1,6 +1,6 @@
-import { isBlockElement, isContent } from './DOMUtil.js'
-import { nodeIteratorWithin } from './TreeWalkerUtil.js'
-import { iterateAll } from './utils.js'
+import { isBlockElement, isContent } from '../../utils/DOMUtil.js'
+import { nodeIteratorWithin } from '../../utils/TreeWalkerUtil.js'
+import { iterateAll } from '../../utils/CollectionUtil.js'
 
 export default
 class InlineSemanticsEffect {

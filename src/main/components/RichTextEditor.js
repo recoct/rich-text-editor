@@ -1,4 +1,4 @@
-import RichTextEditorCoordinator from './RichTextEditorCoordinator.js'
+import RichTextEditorCoordinator from '../coordinator/RichTextEditorCoordinator.js'
 
 export default
 class RichTextEditor extends HTMLElement {

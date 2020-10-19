@@ -1,5 +1,5 @@
-import InlineStyleEffect from './InlineStyleEffect.js'
-import { EnumerativeValuedMapFormatStrategy } from './MapLikeFormatStrategy.js'
+import InlineStyleEffect from './basics/InlineStyleEffect.js'
+import { EnumerativeValuedMapFormatStrategy } from './strategies/MapLikeFormatStrategy.js'
 
 export default
 class FontColorFormatEffect extends InlineStyleEffect {

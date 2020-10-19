@@ -1,4 +1,4 @@
-import { iterateAll, map, findLastIndex } from './utils.js'
+import { iterateAll, map, findLastIndex } from '../../utils/CollectionUtil.js'
 import AbstractFormatStrategy from './AbstractFormatStrategy.js'
 
 export

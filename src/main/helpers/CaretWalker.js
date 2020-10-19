@@ -1,6 +1,6 @@
-import { isLinebreak, isNonEmptyText, isInlineEmbeded } from './DOMUtil.js'
-import { nodeBefore, nodeAfter } from './TreeWalkerUtil.js'
-import { startOfRange, endOfRange, isEqualRange, extendStart, extendEnd, caretPosition } from './RangeFactory.js'
+import { isLinebreak, isNonEmptyText, isInlineEmbeded } from '../utils/DOMUtil.js'
+import { nodeBefore, nodeAfter } from '../utils/TreeWalkerUtil.js'
+import { startOfRange, endOfRange, isEqualRange, extendStart, extendEnd, caretPosition } from '../utils/RangeUtil.js'
 
 export default
 class CaretWalker {

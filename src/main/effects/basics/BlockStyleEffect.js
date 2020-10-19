@@ -1,4 +1,4 @@
-import { nodeExclusiveIteratorWithin, nodeIteratorWithin } from './TreeWalkerUtil.js'
+import { nodeExclusiveIteratorWithin, nodeIteratorWithin } from '../../utils/TreeWalkerUtil.js'
 
 export default
 class BlockStyleEffect {

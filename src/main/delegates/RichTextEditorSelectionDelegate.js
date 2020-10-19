@@ -1,7 +1,7 @@
-import { isBlockElement, nodeLength } from './DOMUtil.js'
-import { startOfRange, endOfRange, alignTo } from './RangeFactory.js'
-import RangeRegulator from './RangeRegulator.js'
-import CaretWalker from './CaretWalker.js'
+import { isBlockElement, nodeLength } from '../utils/DOMUtil.js'
+import { startOfRange, endOfRange, alignTo } from '../utils/RangeUtil.js'
+import RangeRegulator from '../helpers/RangeRegulator.js'
+import CaretWalker from '../helpers/CaretWalker.js'
 import Delegate from './Delegate.js'
 import CompositeDelegate from './CompositeDelegate.js'
 

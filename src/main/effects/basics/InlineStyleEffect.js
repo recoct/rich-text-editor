@@ -1,5 +1,5 @@
-import { isBlockElement } from './DOMUtil.js'
-import { nodeIteratorWithin } from './TreeWalkerUtil.js'
+import { isBlockElement } from '../../utils/DOMUtil.js'
+import { nodeIteratorWithin } from '../../utils/TreeWalkerUtil.js'
 
 export default
 class InlineStyleEffect {

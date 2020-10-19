@@ -1,5 +1,5 @@
-import InlineSemanticsEffect from './InlineSemanticsEffect.js'
-import { ToggleKeyedSetFormatStrategy } from './SetLikeFormatStrategy.js'
+import InlineSemanticsEffect from './basics/InlineSemanticsEffect.js'
+import { ToggleKeyedSetFormatStrategy } from './strategies/SetLikeFormatStrategy.js'
 
 export
 class ToggleBoldFormatEffect extends InlineSemanticsEffect {

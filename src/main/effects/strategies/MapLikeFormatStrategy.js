@@ -1,5 +1,5 @@
 /* eslint class-methods-use-this: [ "error", { "exceptMethods": [ "unify", "diversify" ] } ] */
-import { iterateAll, findIndex, map, dryrun } from './utils.js'
+import { iterateAll, findIndex, map, dryrun } from '../../utils/CollectionUtil.js'
 import AbstractFormatStrategy from './AbstractFormatStrategy.js'
 
 export

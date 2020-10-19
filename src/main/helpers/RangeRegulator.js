@@ -1,6 +1,6 @@
-import { isBlockElement, isNonEmptyText, isContent, nodeLength, closest } from './DOMUtil.js'
-import { nodeBefore, nodeAfter } from './TreeWalkerUtil.js'
-import { startOfRange, endOfRange, extendStart, extendEnd, extendStartToContainer, extendEndToContainer, extendStartToAdjacentContainer, extendEndToAdjacentContainer, alignTo } from './RangeFactory.js'
+import { isBlockElement, isNonEmptyText, isContent, nodeLength, closest } from '../utils/DOMUtil.js'
+import { nodeBefore, nodeAfter } from '../utils/TreeWalkerUtil.js'
+import { startOfRange, endOfRange, extendStart, extendEnd, extendStartToContainer, extendEndToContainer, extendStartToAdjacentContainer, extendEndToAdjacentContainer, alignTo } from '../utils/RangeUtil.js'
 
 export default
 class RangeRegulator {
