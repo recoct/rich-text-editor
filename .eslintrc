@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "babelOptions": {
+      "configFile": "./.babelrc"
+    }
+  },
+  "rules": {
+    "semi": [ "error", "never" ],
+    "curly": [ "error", "all" ],
+    "array-bracket-spacing": [ "error", "always" ],
+    "object-curly-spacing": [ "error", "always" ],
+    "object-curly-newline": [ "error", { "multiline": true } ],
+    "no-use-before-define": [ "error", { "functions": false, "classes": false } ],
+    "no-unused-vars": [ "error", { "varsIgnorePattern": "_", "args": "none", "caughtErrors": "none" } ],
+    "no-underscore-dangle": [ "error", { "allowAfterThis": true } ],
+    "no-restricted-syntax": [ "error", "IterationStatement" ],
+    "arrow-parens": [ "error", "as-needed" ],
+    "comma-dangle": [ "error", { "arrays": "always-multiline", "objects": "always-multiline" } ],
+    "generator-star-spacing": [ "error", { "before": false, "after": true, "method": { "after": false } } ],
+    "lines-between-class-members": [ "error", "always", { "exceptAfterSingleLine": true } ],
+    "one-var": [ "error", { "uninitialized": "consecutive" } ],
+    "operator-linebreak": [ "error", "none", { "overrides": { "&&": "after", "||": "after" } } ],
+    "yoda": [ "error", "never", { "exceptRange": true } ],
+    "no-bitwise": [ "off" ],
+    "no-continue": [ "off" ],
+    "no-shadow": [ "off" ],
+    "no-param-reassign": [ "off" ],
+    "no-constant-condition": [ "off" ],
+    "no-mixed-operators": [ "off" ],
+    "no-console": [ "off" ],
+    "no-nested-ternary": [ "off" ],
+    "no-implicit-globals": [ "off" ],
+    "one-var-declaration-per-line": [ "off" ],
+    "class-methods-use-this": [ "off" ],
+    "max-classes-per-file": [ "off" ],
+    "import/extensions": [ "error", "ignorePackages", { "js": "always", "mjs": "never", "jsx": "never" } ]
+  }
+}

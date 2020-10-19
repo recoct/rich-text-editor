@@ -1,0 +1,26 @@
+{
+  "name": "rich-text-editor",
+  "version": "0.0.1",
+  "description": "a simple rich text editor",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "open -a \"Google Chrome.app\" \"http://localhost:8001/rich-text-editor/examples/demo.html\""
+  },
+  "keywords": [],
+  "author": "recoct@outlook.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/eslint-parser": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "dependencies": {}
+}
